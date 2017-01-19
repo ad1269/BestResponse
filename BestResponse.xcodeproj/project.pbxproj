@@ -15,6 +15,8 @@
 		CDAF10D71E305A4600EC92EA /* BestResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10D61E305A4600EC92EA /* BestResponseTests.swift */; };
 		CDAF10E21E305A4600EC92EA /* BestResponseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10E11E305A4600EC92EA /* BestResponseUITests.swift */; };
 		CDAF10F01E3068B600EC92EA /* Data Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10EF1E3068B600EC92EA /* Data Structures.swift */; };
+		CDAF10F31E306F0500EC92EA /* SnapContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10F11E306F0500EC92EA /* SnapContainerViewController.swift */; };
+		CDAF10F41E306F0500EC92EA /* VerticalScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10F21E306F0500EC92EA /* VerticalScrollViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		CDAF10E11E305A4600EC92EA /* BestResponseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestResponseUITests.swift; sourceTree = "<group>"; };
 		CDAF10E31E305A4600EC92EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDAF10EF1E3068B600EC92EA /* Data Structures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data Structures.swift"; sourceTree = "<group>"; };
+		CDAF10F11E306F0500EC92EA /* SnapContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapContainerViewController.swift; sourceTree = "<group>"; };
+		CDAF10F21E306F0500EC92EA /* VerticalScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalScrollViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				CDAF10C31E305A4600EC92EA /* ViewController.swift */,
 				CDAF10C51E305A4600EC92EA /* Main.storyboard */,
 				CDAF10EF1E3068B600EC92EA /* Data Structures.swift */,
+				CDAF10F61E306F2000EC92EA /* SnapContainerViewController */,
 				CDAF10C81E305A4600EC92EA /* Assets.xcassets */,
 				CDAF10CA1E305A4600EC92EA /* LaunchScreen.storyboard */,
 				CDAF10CD1E305A4600EC92EA /* Info.plist */,
@@ -126,6 +131,15 @@
 				CDAF10E31E305A4600EC92EA /* Info.plist */,
 			);
 			path = BestResponseUITests;
+			sourceTree = "<group>";
+		};
+		CDAF10F61E306F2000EC92EA /* SnapContainerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CDAF10F11E306F0500EC92EA /* SnapContainerViewController.swift */,
+				CDAF10F21E306F0500EC92EA /* VerticalScrollViewController.swift */,
+			);
+			name = SnapContainerViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDAF10F31E306F0500EC92EA /* SnapContainerViewController.swift in Sources */,
 				CDAF10F01E3068B600EC92EA /* Data Structures.swift in Sources */,
+				CDAF10F41E306F0500EC92EA /* VerticalScrollViewController.swift in Sources */,
 				CDAF10C41E305A4600EC92EA /* ViewController.swift in Sources */,
 				CDAF10C21E305A4600EC92EA /* AppDelegate.swift in Sources */,
 			);
