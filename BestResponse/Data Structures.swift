@@ -26,7 +26,7 @@ class User {
         upvoteScore = 0
         revealNum = 0
         topPosts = Array<Post>()
-        profilePic = UIImage()
+        profilePic = UIImageView()
     }
 }
 
