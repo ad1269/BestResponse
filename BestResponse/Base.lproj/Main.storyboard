@@ -127,23 +127,34 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zS-Kw-b2Q" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="16" y="275" width="343" height="186"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="275" width="375" height="186"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="186" id="HRX-49-BeG"/>
+                                    <constraint firstAttribute="width" secondItem="9zS-Kw-b2Q" secondAttribute="height" multiplier="125:62" id="ODG-59-vh6"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rh1-KB-L4O">
+                                <rect key="frame" x="0.0" y="461" width="375" height="206"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="eLy-SL-C1G" id="X6L-4s-gIV"/>
+                                    <outlet property="delegate" destination="eLy-SL-C1G" id="iYh-Gz-65q"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="GB4-wr-I2H" firstAttribute="top" secondItem="f0R-TL-pG9" secondAttribute="bottom" constant="20" id="0P2-w5-19d"/>
                             <constraint firstAttribute="leadingMargin" secondItem="jMo-Qg-Oqe" secondAttribute="leading" id="2Hp-IA-cAv"/>
+                            <constraint firstItem="rh1-KB-L4O" firstAttribute="leading" secondItem="ZLs-7a-eiM" secondAttribute="leadingMargin" constant="-16" id="4TR-yZ-axE"/>
                             <constraint firstAttribute="leadingMargin" secondItem="GB4-wr-I2H" secondAttribute="leading" id="5Tk-1U-Nx6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="b3p-Lb-x6n" secondAttribute="trailing" id="8cV-EQ-C5r"/>
                             <constraint firstItem="XOr-sY-Vig" firstAttribute="top" secondItem="rMi-wr-ojp" secondAttribute="bottom" constant="18" id="ARj-fW-pSN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rh1-KB-L4O" secondAttribute="trailing" constant="-16" id="BWS-Jg-AwM"/>
                             <constraint firstItem="rMi-wr-ojp" firstAttribute="top" secondItem="GB4-wr-I2H" secondAttribute="bottom" constant="18" id="Cn1-UX-IvB"/>
                             <constraint firstItem="XOr-sY-Vig" firstAttribute="leading" secondItem="gwV-J1-cFJ" secondAttribute="trailing" constant="8" id="Ffe-Z4-rar"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aYu-Xz-VKI" secondAttribute="trailing" id="I5P-DS-fSO"/>
+                            <constraint firstItem="9zS-Kw-b2Q" firstAttribute="leading" secondItem="ZLs-7a-eiM" secondAttribute="leadingMargin" constant="-16" id="JET-GJ-CkA"/>
                             <constraint firstItem="jMo-Qg-Oqe" firstAttribute="top" secondItem="GB4-wr-I2H" secondAttribute="bottom" constant="18" id="KKV-HW-7rQ"/>
                             <constraint firstItem="aYu-Xz-VKI" firstAttribute="top" secondItem="f0R-TL-pG9" secondAttribute="bottom" constant="20" id="Kka-kT-V6B"/>
                             <constraint firstItem="aYu-Xz-VKI" firstAttribute="leading" secondItem="GB4-wr-I2H" secondAttribute="trailing" constant="8" id="Klo-dt-qA4"/>
@@ -151,10 +162,11 @@
                             <constraint firstItem="9zS-Kw-b2Q" firstAttribute="top" secondItem="gwV-J1-cFJ" secondAttribute="bottom" constant="8" id="PKp-9w-U4V"/>
                             <constraint firstItem="b3p-Lb-x6n" firstAttribute="leading" secondItem="GB4-wr-I2H" secondAttribute="trailing" constant="8" id="QBP-Vm-xz6"/>
                             <constraint firstItem="gwV-J1-cFJ" firstAttribute="top" secondItem="jMo-Qg-Oqe" secondAttribute="bottom" constant="18" id="RBW-xx-Umz"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="9zS-Kw-b2Q" secondAttribute="leading" id="SZn-Op-jhH"/>
                             <constraint firstItem="GB4-wr-I2H" firstAttribute="width" secondItem="ZLs-7a-eiM" secondAttribute="height" multiplier="159:667" id="TFV-F1-MGQ"/>
                             <constraint firstItem="rMi-wr-ojp" firstAttribute="leading" secondItem="jMo-Qg-Oqe" secondAttribute="trailing" constant="8" id="ceY-on-QPF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="9zS-Kw-b2Q" secondAttribute="trailing" id="qI0-lR-2Gr"/>
+                            <constraint firstItem="iUm-Ha-SGT" firstAttribute="top" secondItem="rh1-KB-L4O" secondAttribute="bottom" id="fsY-zd-qUO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9zS-Kw-b2Q" secondAttribute="trailing" constant="-16" id="hKH-Nu-ODh"/>
+                            <constraint firstItem="rh1-KB-L4O" firstAttribute="top" secondItem="9zS-Kw-b2Q" secondAttribute="bottom" id="sGW-tj-oeM"/>
                             <constraint firstAttribute="leadingMargin" secondItem="gwV-J1-cFJ" secondAttribute="leading" id="z6R-3d-74w"/>
                         </constraints>
                     </view>
@@ -165,6 +177,7 @@
                         <outlet property="Score" destination="rMi-wr-ojp" id="Lxu-ky-CKb"/>
                         <outlet property="chartView" destination="9zS-Kw-b2Q" id="ngc-VQ-dBA"/>
                         <outlet property="profileLabel" destination="aYu-Xz-VKI" id="s9S-9v-BFj"/>
+                        <outlet property="topCommentsTableView" destination="rh1-KB-L4O" id="TWY-Zl-lpe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HEe-c7-1BH" userLabel="First Responder" sceneMemberID="firstResponder"/>
