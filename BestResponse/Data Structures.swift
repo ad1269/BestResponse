@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import PhotosUI
 
 class User {
     // Username of the User
@@ -15,9 +16,17 @@ class User {
     // Add list of followers
     // Add profile picture
     // Add BRScore object
+    let upvoteScore: Int
+    let revealNum: Int
+    let topPosts: Array<Post>
+    let profilePic: UIImageView
     
     init() {
         username = ""
+        upvoteScore = 0
+        revealNum = 0
+        topPosts = Array<Post>()
+        profilePic = UIImage()
     }
 }
 
