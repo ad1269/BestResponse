@@ -15,6 +15,7 @@
 		CDAF10D71E305A4600EC92EA /* BestResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10D61E305A4600EC92EA /* BestResponseTests.swift */; };
 		CDAF10E21E305A4600EC92EA /* BestResponseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10E11E305A4600EC92EA /* BestResponseUITests.swift */; };
 		CDAF10F01E3068B600EC92EA /* Data Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10EF1E3068B600EC92EA /* Data Structures.swift */; };
+		CDC2DE7F1E318EDD008D8E5D /* EZSwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CDAF10E11E305A4600EC92EA /* BestResponseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestResponseUITests.swift; sourceTree = "<group>"; };
 		CDAF10E31E305A4600EC92EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDAF10EF1E3068B600EC92EA /* Data Structures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data Structures.swift"; sourceTree = "<group>"; };
+		CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZSwipeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				CDAF10C31E305A4600EC92EA /* ViewController.swift */,
 				CDAF10C51E305A4600EC92EA /* Main.storyboard */,
 				CDAF10EF1E3068B600EC92EA /* Data Structures.swift */,
+				CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */,
 				CDAF10C81E305A4600EC92EA /* Assets.xcassets */,
 				CDAF10CA1E305A4600EC92EA /* LaunchScreen.storyboard */,
 				CDAF10CD1E305A4600EC92EA /* Info.plist */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDAF10F01E3068B600EC92EA /* Data Structures.swift in Sources */,
+				CDC2DE7F1E318EDD008D8E5D /* EZSwipeController.swift in Sources */,
 				CDAF10C41E305A4600EC92EA /* ViewController.swift in Sources */,
 				CDAF10C21E305A4600EC92EA /* AppDelegate.swift in Sources */,
 			);
@@ -509,6 +513,7 @@
 				CDAF10E81E305A4600EC92EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDAF10E91E305A4600EC92EA /* Build configuration list for PBXNativeTarget "BestResponseTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +522,7 @@
 				CDAF10EB1E305A4600EC92EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDAF10EC1E305A4600EC92EA /* Build configuration list for PBXNativeTarget "BestResponseUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +531,7 @@
 				CDAF10EE1E305A4600EC92EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
