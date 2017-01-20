@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: EZSwipeController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,22 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func setupView() {
+        datasource = self
+    }
+}
 
-
+extension ViewController: EZSwipeControllerDataSource {
+    func viewControllerData() -> [UIViewController] {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let left = storyboard.instantiateViewController(withIdentifier: "left")
+        //let middle = storyboard.instantiateViewController(withIdentifier: "middle")
+        let right = storyboard.instantiateViewController(withIdentifier: "right")
+        
+        return [left, right]
+    }
 }
 
