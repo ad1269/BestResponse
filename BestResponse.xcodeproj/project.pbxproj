@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3536F63A1E3192D9000B2983 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536F6391E3192D9000B2983 /* ProfileViewController.swift */; };
+		CD26431E1E3203B70025D62F /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD26431D1E3203B70025D62F /* FeedTableViewController.swift */; };
 		CDAF10C21E305A4600EC92EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10C11E305A4600EC92EA /* AppDelegate.swift */; };
-		CDAF10C41E305A4600EC92EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10C31E305A4600EC92EA /* ViewController.swift */; };
+		CDAF10C41E305A4600EC92EA /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10C31E305A4600EC92EA /* SwipeViewController.swift */; };
 		CDAF10C71E305A4600EC92EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDAF10C51E305A4600EC92EA /* Main.storyboard */; };
 		CDAF10C91E305A4600EC92EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDAF10C81E305A4600EC92EA /* Assets.xcassets */; };
 		CDAF10CC1E305A4600EC92EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDAF10CA1E305A4600EC92EA /* LaunchScreen.storyboard */; };
@@ -17,7 +18,6 @@
 		CDAF10E21E305A4600EC92EA /* BestResponseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10E11E305A4600EC92EA /* BestResponseUITests.swift */; };
 		CDAF10F01E3068B600EC92EA /* Data Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10EF1E3068B600EC92EA /* Data Structures.swift */; };
 		CDC2DE7F1E318EDD008D8E5D /* EZSwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */; };
-		CDEB4AF81E319A0600EED412 /* TableFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB4AF71E319A0600EED412 /* TableFeedViewController.swift */; };
 		CDF58BD51E31A2D100114101 /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDF58BD41E31A2D100114101 /* profile.jpg */; };
 /* End PBXBuildFile section */
 
@@ -40,9 +40,10 @@
 
 /* Begin PBXFileReference section */
 		3536F6391E3192D9000B2983 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CD26431D1E3203B70025D62F /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		CDAF10BE1E305A4600EC92EA /* BestResponse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestResponse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDAF10C11E305A4600EC92EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDAF10C31E305A4600EC92EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDAF10C31E305A4600EC92EA /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		CDAF10C61E305A4600EC92EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDAF10C81E305A4600EC92EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDAF10CB1E305A4600EC92EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +56,6 @@
 		CDAF10E31E305A4600EC92EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDAF10EF1E3068B600EC92EA /* Data Structures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data Structures.swift"; sourceTree = "<group>"; };
 		CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZSwipeController.swift; sourceTree = "<group>"; };
-		CDEB4AF71E319A0600EED412 /* TableFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableFeedViewController.swift; sourceTree = "<group>"; };
 		CDF58BD41E31A2D100114101 /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = profile.jpg; path = ../../../Downloads/profile.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,12 +108,12 @@
 			isa = PBXGroup;
 			children = (
 				CDAF10C11E305A4600EC92EA /* AppDelegate.swift */,
-				CDAF10C31E305A4600EC92EA /* ViewController.swift */,
+				CDAF10C31E305A4600EC92EA /* SwipeViewController.swift */,
 				CDAF10C51E305A4600EC92EA /* Main.storyboard */,
+				CD26431D1E3203B70025D62F /* FeedTableViewController.swift */,
 				3536F6391E3192D9000B2983 /* ProfileViewController.swift */,
 				CDAF10EF1E3068B600EC92EA /* Data Structures.swift */,
 				CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */,
-				CDEB4AF71E319A0600EED412 /* TableFeedViewController.swift */,
 				CDF58BD41E31A2D100114101 /* profile.jpg */,
 				CDAF10C81E305A4600EC92EA /* Assets.xcassets */,
 				CDAF10CA1E305A4600EC92EA /* LaunchScreen.storyboard */,
@@ -277,10 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDAF10F01E3068B600EC92EA /* Data Structures.swift in Sources */,
+				CD26431E1E3203B70025D62F /* FeedTableViewController.swift in Sources */,
 				CDC2DE7F1E318EDD008D8E5D /* EZSwipeController.swift in Sources */,
 				3536F63A1E3192D9000B2983 /* ProfileViewController.swift in Sources */,
-				CDAF10C41E305A4600EC92EA /* ViewController.swift in Sources */,
-				CDEB4AF81E319A0600EED412 /* TableFeedViewController.swift in Sources */,
+				CDAF10C41E305A4600EC92EA /* SwipeViewController.swift in Sources */,
 				CDAF10C21E305A4600EC92EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
