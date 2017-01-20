@@ -12,18 +12,20 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     @IBOutlet weak var profileLabel: UILabel!
-    let user: User = User()
-    
     @IBOutlet weak var Score: UILabel!
     @IBOutlet weak var Reveals: UILabel!
     @IBOutlet weak var ProfilePicture: UIImageView!
+    @IBOutlet weak var BioTextView: UITextView!
+    
+    let user: User = User()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         profileLabel.text = user.username
+        BioTextView.text = user.bio
         Score.text = String(user.upvoteScore)
-        ProfilePicture = user.profilePic
+        ProfilePicture.image = user.profilePic
         Reveals.text = String(user.revealNum)
     }
     
