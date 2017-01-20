@@ -84,6 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD26431F1E3206700025D62F /* External Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */,
+			);
+			name = "External Libraries";
+			sourceTree = "<group>";
+		};
+		CD2643201E32068C0025D62F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CDAF10C31E305A4600EC92EA /* SwipeViewController.swift */,
+				CD26431D1E3203B70025D62F /* FeedTableViewController.swift */,
+				3536F6391E3192D9000B2983 /* ProfileViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		CDAF10B51E305A4600EC92EA = {
 			isa = PBXGroup;
 			children = (
@@ -108,12 +126,10 @@
 			isa = PBXGroup;
 			children = (
 				CDAF10C11E305A4600EC92EA /* AppDelegate.swift */,
-				CDAF10C31E305A4600EC92EA /* SwipeViewController.swift */,
 				CDAF10C51E305A4600EC92EA /* Main.storyboard */,
-				CD26431D1E3203B70025D62F /* FeedTableViewController.swift */,
-				3536F6391E3192D9000B2983 /* ProfileViewController.swift */,
+				CD2643201E32068C0025D62F /* View Controllers */,
 				CDAF10EF1E3068B600EC92EA /* Data Structures.swift */,
-				CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */,
+				CD26431F1E3206700025D62F /* External Libraries */,
 				CDF58BD41E31A2D100114101 /* profile.jpg */,
 				CDAF10C81E305A4600EC92EA /* Assets.xcassets */,
 				CDAF10CA1E305A4600EC92EA /* LaunchScreen.storyboard */,
