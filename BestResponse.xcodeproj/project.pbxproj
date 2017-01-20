@@ -16,6 +16,7 @@
 		CDAF10E21E305A4600EC92EA /* BestResponseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10E11E305A4600EC92EA /* BestResponseUITests.swift */; };
 		CDAF10F01E3068B600EC92EA /* Data Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10EF1E3068B600EC92EA /* Data Structures.swift */; };
 		CDC2DE7F1E318EDD008D8E5D /* EZSwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */; };
+		CDEB4AF81E319A0600EED412 /* TableFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB4AF71E319A0600EED412 /* TableFeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		CDAF10E31E305A4600EC92EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDAF10EF1E3068B600EC92EA /* Data Structures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data Structures.swift"; sourceTree = "<group>"; };
 		CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZSwipeController.swift; sourceTree = "<group>"; };
+		CDEB4AF71E319A0600EED412 /* TableFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableFeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				CDAF10C51E305A4600EC92EA /* Main.storyboard */,
 				CDAF10EF1E3068B600EC92EA /* Data Structures.swift */,
 				CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */,
+				CDEB4AF71E319A0600EED412 /* TableFeedViewController.swift */,
 				CDAF10C81E305A4600EC92EA /* Assets.xcassets */,
 				CDAF10CA1E305A4600EC92EA /* LaunchScreen.storyboard */,
 				CDAF10CD1E305A4600EC92EA /* Info.plist */,
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					CDAF10BD1E305A4600EC92EA = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SQ7W89WBV2;
 						ProvisioningStyle = Automatic;
 					};
 					CDAF10D11E305A4600EC92EA = {
@@ -268,6 +272,7 @@
 				CDAF10F01E3068B600EC92EA /* Data Structures.swift in Sources */,
 				CDC2DE7F1E318EDD008D8E5D /* EZSwipeController.swift in Sources */,
 				CDAF10C41E305A4600EC92EA /* ViewController.swift in Sources */,
+				CDEB4AF81E319A0600EED412 /* TableFeedViewController.swift in Sources */,
 				CDAF10C21E305A4600EC92EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SQ7W89WBV2;
 				INFOPLIST_FILE = BestResponse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AD.BestResponse;
@@ -432,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SQ7W89WBV2;
 				INFOPLIST_FILE = BestResponse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AD.BestResponse;
