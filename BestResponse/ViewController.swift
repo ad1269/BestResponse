@@ -31,7 +31,6 @@ extension ViewController: EZSwipeControllerDataSource {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let left = storyboard.instantiateViewController(withIdentifier: "left")
-        //let middle = storyboard.instantiateViewController(withIdentifier: "middle")
         let right = storyboard.instantiateViewController(withIdentifier: "right")
         
         return [left, right]
