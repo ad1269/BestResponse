@@ -126,6 +126,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zS-Kw-b2Q" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="275" width="343" height="186"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="186" id="HRX-49-BeG"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -141,10 +148,13 @@
                             <constraint firstItem="aYu-Xz-VKI" firstAttribute="top" secondItem="f0R-TL-pG9" secondAttribute="bottom" constant="20" id="Kka-kT-V6B"/>
                             <constraint firstItem="aYu-Xz-VKI" firstAttribute="leading" secondItem="GB4-wr-I2H" secondAttribute="trailing" constant="8" id="Klo-dt-qA4"/>
                             <constraint firstItem="b3p-Lb-x6n" firstAttribute="top" secondItem="aYu-Xz-VKI" secondAttribute="bottom" constant="8" id="Knt-9p-jEl"/>
+                            <constraint firstItem="9zS-Kw-b2Q" firstAttribute="top" secondItem="gwV-J1-cFJ" secondAttribute="bottom" constant="8" id="PKp-9w-U4V"/>
                             <constraint firstItem="b3p-Lb-x6n" firstAttribute="leading" secondItem="GB4-wr-I2H" secondAttribute="trailing" constant="8" id="QBP-Vm-xz6"/>
                             <constraint firstItem="gwV-J1-cFJ" firstAttribute="top" secondItem="jMo-Qg-Oqe" secondAttribute="bottom" constant="18" id="RBW-xx-Umz"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="9zS-Kw-b2Q" secondAttribute="leading" id="SZn-Op-jhH"/>
                             <constraint firstItem="GB4-wr-I2H" firstAttribute="width" secondItem="ZLs-7a-eiM" secondAttribute="height" multiplier="159:667" id="TFV-F1-MGQ"/>
                             <constraint firstItem="rMi-wr-ojp" firstAttribute="leading" secondItem="jMo-Qg-Oqe" secondAttribute="trailing" constant="8" id="ceY-on-QPF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9zS-Kw-b2Q" secondAttribute="trailing" id="qI0-lR-2Gr"/>
                             <constraint firstAttribute="leadingMargin" secondItem="gwV-J1-cFJ" secondAttribute="leading" id="z6R-3d-74w"/>
                         </constraints>
                     </view>
@@ -153,12 +163,13 @@
                         <outlet property="ProfilePicture" destination="GB4-wr-I2H" id="EZ2-rb-Jb7"/>
                         <outlet property="Reveals" destination="XOr-sY-Vig" id="7lN-ga-BY7"/>
                         <outlet property="Score" destination="rMi-wr-ojp" id="Lxu-ky-CKb"/>
+                        <outlet property="chartView" destination="9zS-Kw-b2Q" id="ngc-VQ-dBA"/>
                         <outlet property="profileLabel" destination="aYu-Xz-VKI" id="s9S-9v-BFj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HEe-c7-1BH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="38" y="-595"/>
+            <point key="canvasLocation" x="37.600000000000001" y="-595.05247376311854"/>
         </scene>
     </scenes>
 </document>

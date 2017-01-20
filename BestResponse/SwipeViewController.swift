@@ -47,7 +47,7 @@ extension SwipeViewController: EZSwipeControllerDataSource {
     }
     
     func indexOfStartingPage() -> Int {
-        return 0
+        return 1
     }
     
     func changedToPageIndex(_ index: Int) {

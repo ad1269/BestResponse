@@ -22,6 +22,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CD2643491E320C060025D62F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2643321E320A3D0025D62F /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		CD26434B1E320C060025D62F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2643321E320A3D0025D62F /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06B120D51D811E6200D14B02;
+			remoteInfo = ChartsRealm;
+		};
+		CD26434D1E320C060025D62F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2643321E320A3D0025D62F /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
 		CDAF10D31E305A4600EC92EA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CDAF10B61E305A4600EC92EA /* Project object */;
@@ -38,9 +59,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CD2643311E320A110025D62F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3536F6391E3192D9000B2983 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CD26431D1E3203B70025D62F /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		CD2643321E320A3D0025D62F /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		CDAF10BE1E305A4600EC92EA /* BestResponse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestResponse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDAF10C11E305A4600EC92EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDAF10C31E305A4600EC92EA /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +122,7 @@
 		CD26431F1E3206700025D62F /* External Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				CD2643321E320A3D0025D62F /* Charts.xcodeproj */,
 				CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */,
 			);
 			name = "External Libraries";
@@ -100,6 +136,16 @@
 				3536F6391E3192D9000B2983 /* ProfileViewController.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CD2643441E320C060025D62F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD26434A1E320C060025D62F /* Charts.framework */,
+				CD26434C1E320C060025D62F /* ChartsRealm.framework */,
+				CD26434E1E320C060025D62F /* ChartsTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CDAF10B51E305A4600EC92EA = {
@@ -166,6 +212,7 @@
 				CDAF10BA1E305A4600EC92EA /* Sources */,
 				CDAF10BB1E305A4600EC92EA /* Frameworks */,
 				CDAF10BC1E305A4600EC92EA /* Resources */,
+				CD2643311E320A110025D62F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +297,12 @@
 			mainGroup = CDAF10B51E305A4600EC92EA;
 			productRefGroup = CDAF10BF1E305A4600EC92EA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CD2643441E320C060025D62F /* Products */;
+					ProjectRef = CD2643321E320A3D0025D62F /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CDAF10BD1E305A4600EC92EA /* BestResponse */,
@@ -258,6 +311,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CD26434A1E320C060025D62F /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = CD2643491E320C060025D62F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD26434C1E320C060025D62F /* ChartsRealm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsRealm.framework;
+			remoteRef = CD26434B1E320C060025D62F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD26434E1E320C060025D62F /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = CD26434D1E320C060025D62F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CDAF10BC1E305A4600EC92EA /* Resources */ = {
@@ -448,6 +525,7 @@
 		CDAF10E71E305A4600EC92EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SQ7W89WBV2;
 				INFOPLIST_FILE = BestResponse/Info.plist;
@@ -461,6 +539,7 @@
 		CDAF10E81E305A4600EC92EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SQ7W89WBV2;
 				INFOPLIST_FILE = BestResponse/Info.plist;
