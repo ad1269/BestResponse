@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3536F63A1E3192D9000B2983 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536F6391E3192D9000B2983 /* ProfileViewController.swift */; };
 		CDAF10C21E305A4600EC92EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10C11E305A4600EC92EA /* AppDelegate.swift */; };
 		CDAF10C41E305A4600EC92EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10C31E305A4600EC92EA /* ViewController.swift */; };
 		CDAF10C71E305A4600EC92EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDAF10C51E305A4600EC92EA /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3536F6391E3192D9000B2983 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CDAF10BE1E305A4600EC92EA /* BestResponse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestResponse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDAF10C11E305A4600EC92EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDAF10C31E305A4600EC92EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				CDAF10C11E305A4600EC92EA /* AppDelegate.swift */,
 				CDAF10C31E305A4600EC92EA /* ViewController.swift */,
 				CDAF10C51E305A4600EC92EA /* Main.storyboard */,
+				3536F6391E3192D9000B2983 /* ProfileViewController.swift */,
 				CDAF10EF1E3068B600EC92EA /* Data Structures.swift */,
 				CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */,
 				CDEB4AF71E319A0600EED412 /* TableFeedViewController.swift */,
@@ -271,6 +274,7 @@
 			files = (
 				CDAF10F01E3068B600EC92EA /* Data Structures.swift in Sources */,
 				CDC2DE7F1E318EDD008D8E5D /* EZSwipeController.swift in Sources */,
+				3536F63A1E3192D9000B2983 /* ProfileViewController.swift in Sources */,
 				CDAF10C41E305A4600EC92EA /* ViewController.swift in Sources */,
 				CDEB4AF81E319A0600EED412 /* TableFeedViewController.swift in Sources */,
 				CDAF10C21E305A4600EC92EA /* AppDelegate.swift in Sources */,
