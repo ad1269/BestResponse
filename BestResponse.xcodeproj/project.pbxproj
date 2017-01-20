@@ -199,6 +199,7 @@
 				TargetAttributes = {
 					CDAF10BD1E305A4600EC92EA = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SQ7W89WBV2;
 						ProvisioningStyle = Automatic;
 					};
 					CDAF10D11E305A4600EC92EA = {
@@ -420,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SQ7W89WBV2;
 				INFOPLIST_FILE = BestResponse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AD.BestResponse;
@@ -432,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SQ7W89WBV2;
 				INFOPLIST_FILE = BestResponse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AD.BestResponse;
