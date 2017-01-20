@@ -18,6 +18,7 @@
 		CDAF10F01E3068B600EC92EA /* Data Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10EF1E3068B600EC92EA /* Data Structures.swift */; };
 		CDC2DE7F1E318EDD008D8E5D /* EZSwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */; };
 		CDEB4AF81E319A0600EED412 /* TableFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB4AF71E319A0600EED412 /* TableFeedViewController.swift */; };
+		CDF58BD51E31A2D100114101 /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDF58BD41E31A2D100114101 /* profile.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		CDAF10EF1E3068B600EC92EA /* Data Structures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data Structures.swift"; sourceTree = "<group>"; };
 		CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZSwipeController.swift; sourceTree = "<group>"; };
 		CDEB4AF71E319A0600EED412 /* TableFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableFeedViewController.swift; sourceTree = "<group>"; };
+		CDF58BD41E31A2D100114101 /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = profile.jpg; path = ../../../Downloads/profile.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				CDAF10EF1E3068B600EC92EA /* Data Structures.swift */,
 				CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */,
 				CDEB4AF71E319A0600EED412 /* TableFeedViewController.swift */,
+				CDF58BD41E31A2D100114101 /* profile.jpg */,
 				CDAF10C81E305A4600EC92EA /* Assets.xcassets */,
 				CDAF10CA1E305A4600EC92EA /* LaunchScreen.storyboard */,
 				CDAF10CD1E305A4600EC92EA /* Info.plist */,
@@ -248,6 +251,7 @@
 				CDAF10CC1E305A4600EC92EA /* LaunchScreen.storyboard in Resources */,
 				CDAF10C91E305A4600EC92EA /* Assets.xcassets in Resources */,
 				CDAF10C71E305A4600EC92EA /* Main.storyboard in Resources */,
+				CDF58BD51E31A2D100114101 /* profile.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

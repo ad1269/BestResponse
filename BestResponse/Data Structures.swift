@@ -19,14 +19,16 @@ class User {
     let upvoteScore: Int
     let revealNum: Int
     let topPosts: Array<Post>
-    let profilePic: UIImageView
+    let profilePic: UIImage
+    let bio: String
     
     init() {
-        username = ""
+        username = "Random User"
+        bio = "This is a random bio placeholder, for the default constructor for the User object."
         upvoteScore = 0
         revealNum = 0
         topPosts = Array<Post>()
-        profilePic = UIImageView()
+        profilePic = UIImage(named: "profile.jpg")!
     }
 }
 
