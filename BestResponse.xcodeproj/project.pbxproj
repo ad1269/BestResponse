@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3536F63A1E3192D9000B2983 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536F6391E3192D9000B2983 /* ProfileViewController.swift */; };
 		CD26431E1E3203B70025D62F /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD26431D1E3203B70025D62F /* FeedTableViewController.swift */; };
+		CD26435C1E32EE290025D62F /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD26435B1E32EE290025D62F /* profile.jpg */; };
 		CDAF10C21E305A4600EC92EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10C11E305A4600EC92EA /* AppDelegate.swift */; };
 		CDAF10C41E305A4600EC92EA /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10C31E305A4600EC92EA /* SwipeViewController.swift */; };
 		CDAF10C71E305A4600EC92EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDAF10C51E305A4600EC92EA /* Main.storyboard */; };
@@ -18,27 +19,26 @@
 		CDAF10E21E305A4600EC92EA /* BestResponseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10E11E305A4600EC92EA /* BestResponseUITests.swift */; };
 		CDAF10F01E3068B600EC92EA /* Data Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10EF1E3068B600EC92EA /* Data Structures.swift */; };
 		CDC2DE7F1E318EDD008D8E5D /* EZSwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */; };
-		CDF58BD51E31A2D100114101 /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDF58BD41E31A2D100114101 /* profile.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CD2643491E320C060025D62F /* PBXContainerItemProxy */ = {
+		CD2643551E32EE0F0025D62F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CD2643321E320A3D0025D62F /* Charts.xcodeproj */;
+			containerPortal = CD26434F1E32EE0F0025D62F /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F241D8110E600722320;
 			remoteInfo = Charts;
 		};
-		CD26434B1E320C060025D62F /* PBXContainerItemProxy */ = {
+		CD2643571E32EE0F0025D62F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CD2643321E320A3D0025D62F /* Charts.xcodeproj */;
+			containerPortal = CD26434F1E32EE0F0025D62F /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06B120D51D811E6200D14B02;
 			remoteInfo = ChartsRealm;
 		};
-		CD26434D1E320C060025D62F /* PBXContainerItemProxy */ = {
+		CD2643591E32EE0F0025D62F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CD2643321E320A3D0025D62F /* Charts.xcodeproj */;
+			containerPortal = CD26434F1E32EE0F0025D62F /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F2E1D8110E600722320;
 			remoteInfo = ChartsTests;
@@ -75,7 +75,8 @@
 /* Begin PBXFileReference section */
 		3536F6391E3192D9000B2983 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CD26431D1E3203B70025D62F /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
-		CD2643321E320A3D0025D62F /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		CD26434F1E32EE0F0025D62F /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = SOURCE_ROOT; };
+		CD26435B1E32EE290025D62F /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile.jpg; sourceTree = "<group>"; };
 		CDAF10BE1E305A4600EC92EA /* BestResponse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestResponse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDAF10C11E305A4600EC92EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDAF10C31E305A4600EC92EA /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +92,6 @@
 		CDAF10E31E305A4600EC92EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDAF10EF1E3068B600EC92EA /* Data Structures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data Structures.swift"; sourceTree = "<group>"; };
 		CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZSwipeController.swift; sourceTree = "<group>"; };
-		CDF58BD41E31A2D100114101 /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = profile.jpg; path = ../../../Downloads/profile.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +122,7 @@
 		CD26431F1E3206700025D62F /* External Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				CD2643321E320A3D0025D62F /* Charts.xcodeproj */,
+				CD26434F1E32EE0F0025D62F /* Charts.xcodeproj */,
 				CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */,
 			);
 			name = "External Libraries";
@@ -138,12 +138,12 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
-		CD2643441E320C060025D62F /* Products */ = {
+		CD2643501E32EE0F0025D62F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD26434A1E320C060025D62F /* Charts.framework */,
-				CD26434C1E320C060025D62F /* ChartsRealm.framework */,
-				CD26434E1E320C060025D62F /* ChartsTests.xctest */,
+				CD2643561E32EE0F0025D62F /* Charts.framework */,
+				CD2643581E32EE0F0025D62F /* ChartsRealm.framework */,
+				CD26435A1E32EE0F0025D62F /* ChartsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,7 +176,7 @@
 				CD2643201E32068C0025D62F /* View Controllers */,
 				CDAF10EF1E3068B600EC92EA /* Data Structures.swift */,
 				CD26431F1E3206700025D62F /* External Libraries */,
-				CDF58BD41E31A2D100114101 /* profile.jpg */,
+				CD26435B1E32EE290025D62F /* profile.jpg */,
 				CDAF10C81E305A4600EC92EA /* Assets.xcassets */,
 				CDAF10CA1E305A4600EC92EA /* LaunchScreen.storyboard */,
 				CDAF10CD1E305A4600EC92EA /* Info.plist */,
@@ -299,8 +299,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = CD2643441E320C060025D62F /* Products */;
-					ProjectRef = CD2643321E320A3D0025D62F /* Charts.xcodeproj */;
+					ProductGroup = CD2643501E32EE0F0025D62F /* Products */;
+					ProjectRef = CD26434F1E32EE0F0025D62F /* Charts.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -313,25 +313,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		CD26434A1E320C060025D62F /* Charts.framework */ = {
+		CD2643561E32EE0F0025D62F /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = CD2643491E320C060025D62F /* PBXContainerItemProxy */;
+			remoteRef = CD2643551E32EE0F0025D62F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		CD26434C1E320C060025D62F /* ChartsRealm.framework */ = {
+		CD2643581E32EE0F0025D62F /* ChartsRealm.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ChartsRealm.framework;
-			remoteRef = CD26434B1E320C060025D62F /* PBXContainerItemProxy */;
+			remoteRef = CD2643571E32EE0F0025D62F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		CD26434E1E320C060025D62F /* ChartsTests.xctest */ = {
+		CD26435A1E32EE0F0025D62F /* ChartsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
-			remoteRef = CD26434D1E320C060025D62F /* PBXContainerItemProxy */;
+			remoteRef = CD2643591E32EE0F0025D62F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -344,7 +344,7 @@
 				CDAF10CC1E305A4600EC92EA /* LaunchScreen.storyboard in Resources */,
 				CDAF10C91E305A4600EC92EA /* Assets.xcassets in Resources */,
 				CDAF10C71E305A4600EC92EA /* Main.storyboard in Resources */,
-				CDF58BD51E31A2D100114101 /* profile.jpg in Resources */,
+				CD26435C1E32EE290025D62F /* profile.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
