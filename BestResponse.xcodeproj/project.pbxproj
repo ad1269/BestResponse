@@ -10,6 +10,8 @@
 		3536F63A1E3192D9000B2983 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536F6391E3192D9000B2983 /* ProfileViewController.swift */; };
 		CD26431E1E3203B70025D62F /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD26431D1E3203B70025D62F /* FeedTableViewController.swift */; };
 		CD26435C1E32EE290025D62F /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD26435B1E32EE290025D62F /* profile.jpg */; };
+		CD2643651E32EF0F0025D62F /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2643561E32EE0F0025D62F /* Charts.framework */; };
+		CD2643661E32EF0F0025D62F /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD2643561E32EE0F0025D62F /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDAF10C21E305A4600EC92EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10C11E305A4600EC92EA /* AppDelegate.swift */; };
 		CDAF10C41E305A4600EC92EA /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10C31E305A4600EC92EA /* SwipeViewController.swift */; };
 		CDAF10C71E305A4600EC92EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDAF10C51E305A4600EC92EA /* Main.storyboard */; };
@@ -43,6 +45,13 @@
 			remoteGlobalIDString = 06165F2E1D8110E600722320;
 			remoteInfo = ChartsTests;
 		};
+		CD2643671E32EF0F0025D62F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD26434F1E32EE0F0025D62F /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
 		CDAF10D31E305A4600EC92EA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CDAF10B61E305A4600EC92EA /* Project object */;
@@ -66,6 +75,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				CD2643661E32EF0F0025D62F /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2643651E32EF0F0025D62F /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +228,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CD2643681E32EF0F0025D62F /* PBXTargetDependency */,
 			);
 			name = BestResponse;
 			productName = BestResponse;
@@ -397,6 +409,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CD2643681E32EF0F0025D62F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = CD2643671E32EF0F0025D62F /* PBXContainerItemProxy */;
+		};
 		CDAF10D41E305A4600EC92EA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CDAF10BD1E305A4600EC92EA /* BestResponse */;
