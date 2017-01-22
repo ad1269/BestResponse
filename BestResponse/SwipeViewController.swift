@@ -24,6 +24,7 @@ class SwipeViewController: EZSwipeController {
     override func setupView() {
         datasource = self
         // navigationBarShouldNotExist = true
+        navigationBarShouldBeOnBottom = true
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -36,14 +37,10 @@ extension SwipeViewController: EZSwipeControllerDataSource {
     func viewControllerData() -> [UIViewController] {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let left = storyboard.instantiateViewController(withIdentifier: "Feed")
+        let left = storyboard.instantiateViewController(withIdentifier: "FeedNavigation")
         let right = storyboard.instantiateViewController(withIdentifier: "Profile")
         
         return [left, right]
-    }
-    
-    func titlesForPages() -> [String] {
-        return ["Feed", "Profile"]
     }
     
     func indexOfStartingPage() -> Int {
@@ -59,7 +56,7 @@ extension SwipeViewController: EZSwipeControllerDataSource {
     func navigationBarDataForPageIndex(_ index: Int) -> UINavigationBar {
         var title = ""
         if index == 0 {
-            title = "Feed"
+            title = "BestResponse"
         } else if index == 1 {
             title = "Profile"
         }
