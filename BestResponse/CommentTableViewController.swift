@@ -10,7 +10,7 @@ import UIKit
 
 class CommentTableViewController: UITableViewController {
     
-    var post: String = ""
+    var post: Post = Post()
     var comments: [String] = []
     
     override func viewDidLoad() {
@@ -50,7 +50,7 @@ class CommentTableViewController: UITableViewController {
         let section = indexPath.section
         
         if section == 0 {
-            cell.textLabel?.text = post
+            cell.textLabel?.text = post.content
         }
         else {
             cell.textLabel?.text = comments[indexPath.row]

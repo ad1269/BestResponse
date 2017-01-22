@@ -56,17 +56,21 @@ class Post {
     
     // The content of the post (right now, it's just a string)
     let content: String
+    
+    // Post metadata
     let poster: User
     let comments: [Comment]
+    let isActive: Bool
     
     init() {
         upvotes = 0
         downvotes = 0
         
-        content = ""
+        content = "Test post."
         poster = User()
         
         expirationTime = Date(timeIntervalSinceNow: 10.0)
         comments = [Comment(), Comment(), Comment()]
+        isActive = true
     }
 }

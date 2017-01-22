@@ -9,7 +9,10 @@
 import UIKit
 
 class FeedTableViewController: UITableViewController {
-
+    
+    var activePosts: [Post] = [Post(), Post(), Post()]
+    var inactivePosts: [Post] = [Post(), Post()]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,25 +29,36 @@ class FeedTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func getPostForIndexPath(_ indexPath: IndexPath) -> Post {
+        if indexPath.section == 0 {
+            return activePosts[indexPath.row]
+        }
+        return inactivePosts[indexPath.row]
+    }
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 2
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 5
+        // Active posts
+        if section == 0 {
+            return activePosts.count
+        }
+        // Inactive posts
+        return inactivePosts.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath)
+        let post = getPostForIndexPath(indexPath)
 
-        cell.textLabel?.text = "Section \(indexPath.section) Row \(indexPath.row)"
-
+        cell.textLabel?.text = post.content
         return cell
     }
     
@@ -58,9 +72,9 @@ class FeedTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
                 
         let commentController = storyboard?.instantiateViewController(withIdentifier: "Comments") as! CommentTableViewController
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath)
-        
-        commentController.post = (cell.textLabel?.text)!
+        let post = getPostForIndexPath(indexPath)
+
+        commentController.post = post
         commentController.comments = ["Comment 1", "Comment 2", "Comment 3", "Comment 4", "Comment 5", "Comment 6"]
 
         self.navigationController?.pushViewController(commentController, animated: true)
