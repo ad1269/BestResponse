@@ -75,7 +75,6 @@ class FeedTableViewController: UITableViewController {
         let post = getPostForIndexPath(indexPath)
 
         commentController.post = post
-        commentController.comments = ["Comment 1", "Comment 2", "Comment 3", "Comment 4", "Comment 5", "Comment 6"]
 
         self.navigationController?.pushViewController(commentController, animated: true)
     }

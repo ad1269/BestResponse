@@ -11,7 +11,6 @@ import UIKit
 class CommentTableViewController: UITableViewController {
     
     var post: Post = Post()
-    var comments: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +41,7 @@ class CommentTableViewController: UITableViewController {
         if section == 0 {
             return 1
         }
-        return comments.count
+        return post.comments.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -53,7 +52,7 @@ class CommentTableViewController: UITableViewController {
             cell.textLabel?.text = post.content
         }
         else {
-            cell.textLabel?.text = comments[indexPath.row]
+            cell.textLabel?.text = post.comments[indexPath.row].commentText
         }
         
         return cell
