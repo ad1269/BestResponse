@@ -32,6 +32,20 @@ class User {
     }
 }
 
+class Comment {
+    let commentText: String
+    let upvotes: Int
+    let downvotes: Int
+    let poster: User
+    
+    init() {
+        commentText = "This is a random comment"
+        upvotes = 0
+        downvotes = 0
+        poster = User()
+    }
+}
+
 class Post {
     // Number of upvotes and downvotes
     let upvotes: Int
@@ -42,15 +56,21 @@ class Post {
     
     // The content of the post (right now, it's just a string)
     let content: String
+    
+    // Post metadata
     let poster: User
+    let comments: [Comment]
+    let isActive: Bool
     
     init() {
         upvotes = 0
         downvotes = 0
         
-        content = ""
+        content = "Test post."
         poster = User()
         
         expirationTime = Date(timeIntervalSinceNow: 10.0)
+        comments = [Comment(), Comment(), Comment()]
+        isActive = true
     }
 }

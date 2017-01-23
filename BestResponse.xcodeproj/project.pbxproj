@@ -12,6 +12,7 @@
 		CD26435C1E32EE290025D62F /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD26435B1E32EE290025D62F /* profile.jpg */; };
 		CD2643651E32EF0F0025D62F /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2643561E32EE0F0025D62F /* Charts.framework */; };
 		CD2643661E32EF0F0025D62F /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD2643561E32EE0F0025D62F /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD26436C1E32F49C0025D62F /* CommentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD26436B1E32F49C0025D62F /* CommentTableViewController.swift */; };
 		CDAF10C21E305A4600EC92EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10C11E305A4600EC92EA /* AppDelegate.swift */; };
 		CDAF10C41E305A4600EC92EA /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10C31E305A4600EC92EA /* SwipeViewController.swift */; };
 		CDAF10C71E305A4600EC92EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDAF10C51E305A4600EC92EA /* Main.storyboard */; };
@@ -87,6 +88,7 @@
 		CD26431D1E3203B70025D62F /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		CD26434F1E32EE0F0025D62F /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = SOURCE_ROOT; };
 		CD26435B1E32EE290025D62F /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile.jpg; sourceTree = "<group>"; };
+		CD26436B1E32F49C0025D62F /* CommentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewController.swift; sourceTree = "<group>"; };
 		CDAF10BE1E305A4600EC92EA /* BestResponse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestResponse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDAF10C11E305A4600EC92EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDAF10C31E305A4600EC92EA /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				CDAF10C31E305A4600EC92EA /* SwipeViewController.swift */,
 				CD26431D1E3203B70025D62F /* FeedTableViewController.swift */,
+				CD26436B1E32F49C0025D62F /* CommentTableViewController.swift */,
 				3536F6391E3192D9000B2983 /* ProfileViewController.swift */,
 			);
 			name = "View Controllers";
@@ -382,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDAF10F01E3068B600EC92EA /* Data Structures.swift in Sources */,
+				CD26436C1E32F49C0025D62F /* CommentTableViewController.swift in Sources */,
 				CD26431E1E3203B70025D62F /* FeedTableViewController.swift in Sources */,
 				CDC2DE7F1E318EDD008D8E5D /* EZSwipeController.swift in Sources */,
 				3536F63A1E3192D9000B2983 /* ProfileViewController.swift in Sources */,

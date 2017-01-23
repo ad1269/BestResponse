@@ -1,5 +1,5 @@
 //
-//  FeedTableViewController.swift
+//  CommentTableViewController.swift
 //  BestResponse
 //
 //  Created by AD Mohanraj on 1/20/17.
@@ -8,16 +8,15 @@
 
 import UIKit
 
-class FeedTableViewController: UITableViewController {
+class CommentTableViewController: UITableViewController {
     
-    var activePosts: [Post] = [Post(), Post(), Post()]
-    var inactivePosts: [Post] = [Post(), Post()]
+    var post: Post = Post()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Feed"
-
+        title = "Comments"
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,56 +28,53 @@ class FeedTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func getPostForIndexPath(_ indexPath: IndexPath) -> Post {
-        if indexPath.section == 0 {
-            return activePosts[indexPath.row]
-        }
-        return inactivePosts[indexPath.row]
-    }
-    
+
     // MARK: - Table view data source
-    
+
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 2
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // Active posts
+        // #warning Incomplete implementation, return the number of rows
         if section == 0 {
-            return activePosts.count
+            return 1
         }
-        // Inactive posts
-        return inactivePosts.count
+        return post.comments.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath)
-        let post = getPostForIndexPath(indexPath)
-
-        cell.textLabel?.text = post.content
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let section = indexPath.section
+        
+        if section == 0 {
+            cell.textLabel?.text = post.content
+        }
+        else {
+            cell.textLabel?.text = post.comments[indexPath.row].commentText
+        }
+        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
-            return "Active Posts"
+            return "Post"
         }
-        return "Inactive Posts"
+        return "Comments"
     }
+
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-                
-        let commentController = storyboard?.instantiateViewController(withIdentifier: "Comments") as! CommentTableViewController
-        let post = getPostForIndexPath(indexPath)
+    /*
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        commentController.post = post
+        // Configure the cell...
 
-        self.navigationController?.pushViewController(commentController, animated: true)
+        return cell
     }
-    
+    */
 
     /*
     // Override to support conditional editing of the table view.
