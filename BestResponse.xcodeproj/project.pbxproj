@@ -22,6 +22,7 @@
 		CDAF10E21E305A4600EC92EA /* BestResponseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10E11E305A4600EC92EA /* BestResponseUITests.swift */; };
 		CDAF10F01E3068B600EC92EA /* Data Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF10EF1E3068B600EC92EA /* Data Structures.swift */; };
 		CDC2DE7F1E318EDD008D8E5D /* EZSwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */; };
+		CDC81EA61E359C3900E1BA75 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC81EA51E359C3900E1BA75 /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		CDAF10E31E305A4600EC92EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDAF10EF1E3068B600EC92EA /* Data Structures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data Structures.swift"; sourceTree = "<group>"; };
 		CDC2DE7E1E318EDD008D8E5D /* EZSwipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZSwipeController.swift; sourceTree = "<group>"; };
+		CDC81EA51E359C3900E1BA75 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 		CD2643201E32068C0025D62F /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CDC81EA51E359C3900E1BA75 /* StartViewController.swift */,
 				CDAF10C31E305A4600EC92EA /* SwipeViewController.swift */,
 				CD26431D1E3203B70025D62F /* FeedTableViewController.swift */,
 				CD26436B1E32F49C0025D62F /* CommentTableViewController.swift */,
@@ -385,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDAF10F01E3068B600EC92EA /* Data Structures.swift in Sources */,
+				CDC81EA61E359C3900E1BA75 /* StartViewController.swift in Sources */,
 				CD26436C1E32F49C0025D62F /* CommentTableViewController.swift in Sources */,
 				CD26431E1E3203B70025D62F /* FeedTableViewController.swift in Sources */,
 				CDC2DE7F1E318EDD008D8E5D /* EZSwipeController.swift in Sources */,
