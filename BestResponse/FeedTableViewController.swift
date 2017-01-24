@@ -75,7 +75,6 @@ class FeedTableViewController: UITableViewController {
         let post = getPostForIndexPath(indexPath)
 
         commentController.post = post
-
         self.navigationController?.pushViewController(commentController, animated: true)
     }
     

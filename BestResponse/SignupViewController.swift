@@ -1,20 +1,15 @@
 //
-//  StartViewController.swift
+//  SignupViewController.swift
 //  BestResponse
 //
-//  Created by AD Mohanraj on 1/22/17.
+//  Created by AD Mohanraj on 1/24/17.
 //  Copyright © 2017 AD Mohanraj. All rights reserved.
 //
 
 import UIKit
 
-class StartViewController: UIViewController {
+class SignupViewController: UIViewController {
 
-    @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var signupButton: UIButton!
-    @IBOutlet weak var usernameField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,15 +21,6 @@ class StartViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func login(_ sender: Any) {
-    
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "signupSegue" {
-            print("Segue performed")
-        }
-    }
 
     /*
     // MARK: - Navigation
