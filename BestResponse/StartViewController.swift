@@ -27,15 +27,13 @@ class StartViewController: UIViewController {
     }
     
     @IBAction func login(_ sender: Any) {
-    
+        // Push to SwipeViewController
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "signupSegue" {
-            print("Segue performed")
-        }
+    @IBAction func signup(_ sender: Any) {
+        // Push to SignupViewController
     }
-
+    
     /*
     // MARK: - Navigation
 

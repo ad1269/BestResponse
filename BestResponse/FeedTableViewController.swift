@@ -10,19 +10,15 @@ import UIKit
 
 class FeedTableViewController: UITableViewController {
     
+    // List of active and inactive posts to be displayed by the table.
     var activePosts: [Post] = [Post(), Post(), Post()]
     var inactivePosts: [Post] = [Post(), Post()]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Sets the title of the navigation bar
         title = "Feed"
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +26,7 @@ class FeedTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // Retrieves the post to be displayed for the given table index path.
     func getPostForIndexPath(_ indexPath: IndexPath) -> Post {
         if indexPath.section == 0 {
             return activePosts[indexPath.row]
@@ -38,9 +35,9 @@ class FeedTableViewController: UITableViewController {
     }
     
     // MARK: - Table view data source
+    // These functions configure the UITableView
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 2
     }
 

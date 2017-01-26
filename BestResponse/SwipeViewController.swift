@@ -21,12 +21,14 @@ class SwipeViewController: EZSwipeController {
         // Dispose of any resources that can be recreated.
     }
     
+    // Sets up basic stuff, gets called when the view is loaded.
     override func setupView() {
         datasource = self
         // navigationBarShouldNotExist = true
         navigationBarShouldBeOnBottom = true
     }
     
+    // Hides the status bar
     override var prefersStatusBarHidden: Bool {
         return true
     }
@@ -34,6 +36,8 @@ class SwipeViewController: EZSwipeController {
 
 // Configurations for SwipeViewController
 extension SwipeViewController: EZSwipeControllerDataSource {
+    
+    // Sets up the two view controllers that swipe controller displays
     func viewControllerData() -> [UIViewController] {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -53,6 +57,7 @@ extension SwipeViewController: EZSwipeControllerDataSource {
         }
     }
     
+    // Sets up the navigation bar that is displayed on the bottom of the screen
     func navigationBarDataForPageIndex(_ index: Int) -> UINavigationBar {
         var title = ""
         if index == 0 {
@@ -92,6 +97,7 @@ extension SwipeViewController: EZSwipeControllerDataSource {
         return navigationBar
     }
     
+    // Disables the search button on the feed view, so we can link it to some other action
     func disableSwipingForLeftButtonAtPageIndex(_ index: Int) -> Bool {
         if index == 0 {
             return true
@@ -99,9 +105,10 @@ extension SwipeViewController: EZSwipeControllerDataSource {
         return false
     }
     
+    // Gets called when a left button is pressed.
     func clickedLeftButtonFromPageIndex(_ index: Int) {
         if index == 0 {
-            print("Pull up search view.")
+            print("Do something.")
         }
     }
 }

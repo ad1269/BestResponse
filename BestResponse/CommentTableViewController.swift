@@ -15,6 +15,7 @@ class CommentTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Navigation bar title
         title = "Comments"
         
         // Uncomment the following line to preserve selection between presentations
@@ -30,6 +31,7 @@ class CommentTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    // These functions configure the UITableView
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections

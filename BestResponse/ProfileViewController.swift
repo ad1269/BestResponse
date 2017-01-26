@@ -61,6 +61,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         setChart(values: unitsSold)
         
         // Register UITableView class
+        // This sets the identifier name for the cell to be used later
         topCommentsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
